@@ -4,15 +4,19 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "devStart": "nodemon server.js",
-    "lint": "eslint src"
+    "devStart": "NODE_ENV=development nodemon server.js",
+    "lint": "eslint src",
+    "knex": "knex"
   },
   "dependencies": {
     "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "knex": "^0.95.15",
     "morgan": "~1.9.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1"
   },
   "devDependencies": {
     "eslint": "^8.6.0"
